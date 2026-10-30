@@ -1,0 +1,1623 @@
+/*ESTILOS GENERALES*/
+
+body{
+    background-color: #FFF9ED;
+    margin: 0px;
+}
+
+
+
+
+
+
+/*RESERVAR ESPACIO PARA LA BARRA DE DESPLAZAMIENTO*/
+html {
+    scrollbar-gutter: stable;
+}
+
+
+
+
+
+
+
+
+
+/*CABECERA DE LA PÁGINA*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #FFFFFF;
+    padding: 15px 40px;
+}
+
+
+
+
+/*NOMBRE DEL NEGOCIO*/
+
+header h1 {
+    font-size: 28px;
+    color: #173747;
+    font-weight: 700;
+    font-family: 'Fredoka', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+}
+
+
+/*ENLACE DEL LOGOTIPO*/
+
+.enlace-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+/*ICONO DEL LOGOTIPO*/
+
+.icono-huellitas {
+    font-size: 28px;
+}
+
+
+
+
+/*MENÚ DE NAVEGACIÓN*/
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #173747;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+
+/*EFECTO AL PASAR EL CURSOR*/
+
+nav a:hover {
+    color: #F28C28;
+}
+
+
+
+
+
+
+/*BOTÓN DE WHATSAPP*/
+
+.boton-whatsapp {
+    background-color: #FFD54A;
+    color: #173747;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+}
+
+
+.boton-whatsapp:hover {
+    background-color: #F48E2A;
+}
+
+
+
+
+
+
+/*AGRUPACIÓN DEL MENÚ Y WHATSAPP*/
+
+.acciones-header {
+    display:flex;
+    align-items: center;
+    gap:25px;
+}
+
+
+
+
+
+
+
+/*LOGOTIPO DE CANINO & MICHI*/
+
+.logo-header {
+    width: 100px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+/*PORTADA PRINCIPAL*/
+
+.portada {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contenido-portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contenido-portada h2,
+.contenido-portada p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+/* Aviso de próxima apertura */
+.aviso-apertura {
+    background-color: #FFF3CF;
+    border-left: 4px solid #F28C28;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 20px 0;
+    max-width: 500px;
+}
+
+/* Título del aviso */
+.aviso-apertura strong {
+    display: block;
+    color: #173747;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Descripción del aviso de apertura */
+.contenido-portada .aviso-apertura p {
+    color: #173747;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*ESPACIO PARA LA IMAGEN DE LA PORTADA*/
+
+.imagen-portada {
+    background-color: #E7EFD9;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(18, 54, 91, 0.15);
+}
+
+
+
+
+
+
+
+
+
+/*IMAGEN DENTRO DE LA PORTADA*/
+
+.imagen-portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #12365B;
+    padding: 6px 20px;
+}
+
+footer p {
+    margin:0;
+    color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*TÍTULO DE LA PORTADA*/
+
+.portada h2 {
+    font-family: 'Fredoka', sans-serif;
+    color: #123548;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+/*PÁRRAFO DE LA PORTADA*/
+
+.portada p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #173747;
+    line-height: 1.6;
+    max-width: 450px;
+}
+
+
+
+
+
+
+
+
+
+/*BOTÓN DE LA PORTADA*/
+
+.boton-portada {
+    display: inline-flex;
+    background-color: #FFD54A;
+    color: #173747;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    gap: 8px;
+}
+
+.boton-portada:hover {
+    background-color: #F48E2A;
+}
+
+
+
+
+
+/*SECCIÓN DE CATEGORIAS*/
+
+.categorias {
+    padding: 20px 30px 60px;
+}
+
+
+
+
+
+
+/*TÍTULO DE LA SECCIÓN DE CATEGORÍAS*/
+
+.categorias h2 {
+    font-family:'Fredoka', sans-serif;
+    color: #12365B;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+/*SECCIÓN CATÁLOGO*/
+.catalogo {
+    padding: 20px 30px 60px;
+}
+
+
+
+
+
+
+
+/*TÍTULO DEL CATÁLOGO*/
+
+.catalogo h2 {
+    font-family: 'Fredoka', sans-serif;
+    color: #12365B;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*DESCRIPCIÓN DEL CATÁLOGO*/
+
+.catalogo > p {
+    font-family: 'Nunito', sans-serif;
+    color: #173747;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+/*CONTENEDOR DEL CARRUSEL*/
+.contenedor-productos {
+    display: flex;
+    justify-content: safe center;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+/*CONTENEDOR DE LAS FLECHAS*/
+.controles-carrusel {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+/*BOTONES DE NAVEGACIÓN DEL CARRUSEL*/
+.flecha-carrusel {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #12365B;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(18, 54, 91, 0.15);
+    transition: all 0.3s ease;
+}
+/*EFECTO AL PASAR EL CURSOR SOBRE LAS FLECHAS*/
+.flecha-carrusel:hover {
+    background-color: #F28C28;
+    color: #FFFFFF;
+    transform: translate(-3px);
+}
+/*FLECHAS DESACTIVADAS*/
+.flecha-carrusel:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    transform: none;
+}
+/*BARRA DE DESPLAZAMIENTO DEL CARRUSEL*/
+.contenedor-productos::-webkit-scrollbar {
+    height: 8px;
+}
+/*PARTE MÓVIL DE LA BARRA*/
+.contenedor-productos::-webkit-scrollbar-thumb {
+    background-color: #F28C28;
+    border-radius: 10px;
+}
+/*FONDO DE LA BARRA*/
+.contenedor-productos::-webkit-scrollbar-track{
+    background-color: #E5DFD4;
+    border-radius: 10px;
+}
+/*TARJETAS DE PRODUCTOS DESTACADOS*/
+.tarjeta-producto {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(18, 54, 91, 0.10);
+    width: 260px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+/*FOTOGRAFÍAS DE LOS PRODUCTOS*/
+.tarjeta-producto img {
+    width: auto;
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*NOMBRE DEL PRODUCTO*/
+.tarjeta-producto h3 {
+    font-family: 'Fredoka', sans-serif;
+    color: #12365B;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin: 0 0 6px;
+    min-height: 48px;
+}
+/*DESCRIPCIÓN DEL PRODUCTO*/
+.tarjeta-producto p {
+    font-family: 'Nunito', sans-serif;
+    color: #173747;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.tarjeta-producto .precio-producto {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #12365B;
+    margin-top: 8px;
+}
+/*BOTÓN DE WHATSAPP EN LOS PRODUCTOS*/
+.boton-producto {
+    display: block;
+    background-color: #FFD54A;
+    color: #12365B;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+/*EFECTO HOVER DEL BOTÓN*/
+.boton-producto:hover {
+    background-color: #F48E2A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TÍTULO DE LA SECCIÓN CÓMO COMPRAR*/
+
+.como-comprar h2 {
+    font-family: 'Fredoka', sans-serif;
+    color: #12365B;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/*TÍTULO DE LA SECCIÓN DE ENTREGAS*/
+
+.entregas h2 {
+    font-family: 'Fredoka', sans-serif;
+    color:#12365B;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*TEXTO DE LA SECCIÓN ENTREGAS*/
+
+.entregas {
+    font-family: 'Nunito', sans-serif;
+    color: #173747;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/*ESPACIO DE LA SECCIÓN ENTREGAS*/
+
+.entregas {
+    padding: 40px 30px 70px;
+}
+
+
+/*SECCIÓN DE CONTACTO*/
+
+.contacto {
+    background-color: #12365B;
+    padding: 20px 25px;
+}
+/*TÍTULO DE CONTACTO*/
+.contacto h2 {
+    font-family: 'Fredoka', sans-serif;
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: center;
+}
+/*PÁRRAFO DE CONTACTO*/
+.contacto p {
+    font-family: 'Nunito', sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*BOTÓN DE WHATSAPP EN CONTACTO*/
+
+.boton-contacto-whatsapp {
+    display: inline-flex;
+    background-color: #FFD54A;
+    color: #173747;
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    align-items: center;
+    gap: 8px;
+}
+
+/*BOTÓN DE INSTAGRAM EN CONTACTO*/
+
+.boton-contacto-instagram {
+    background-color: #FFFFFF;
+    color: #173747;
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/*CONTENEDOR DE LOS BOTONES DE CONTACTO*/
+
+.botones-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+
+
+
+/*ESPACIO INFERIOR DE LA SECCIÓN CÓMO COMPRAR*/
+
+.como-comprar {
+    padding-bottom: 60px;
+}
+
+
+
+
+/*CONTENEDOR DE LOS PASOS DE COMPRA*/
+
+.contenedor-pasos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-inline: 30px;
+    box-sizing: border-box;
+}
+
+
+
+
+/*TARJETAS DE LOS PASOS DE COMPRA*/
+
+.tarjeta-paso {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(18, 54, 91, 0.19);
+}
+
+
+/*TÍTULOS DE LAS TARJETAS DE COMPRA*/
+
+.tarjeta-paso h3 {
+    font-family: 'Fredoka', sans-serif;
+    color: #12365B;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/*DESCRIPCIONES DE LAS TAREJTAS DE COMPRA*/
+
+.tarjeta-paso p {
+    font-family: 'Nunito', sans-serif;
+    color: #173747;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+
+/*CONTENEDOR DE CATEGORÍAS*/
+
+.contenedor-categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;     /*esto nos da 4 categorias en una sola fila*/
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/*TARJETAS DE CATEGORÍAS*/
+
+.tarjeta-categoria {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(18, 54, 91, 0.10);
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+
+
+/*IMAGEN DE LAS TAREJETAS DE CATEGORIAS*/
+
+.tarjeta-categoria img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+
+
+
+
+
+
+/*TITULO DE LAS TARJETAS*/
+
+.tarjeta-categoria h3 {
+    font-family: 'Fredoka', sans-serif;
+    color: #12365B;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/*ETIQUETA DE PRÓXIMAMENTE*/
+
+.etiqueta-proximamente {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0;
+    background-color: #FFF1D5;
+    color: #8A5818;
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+/*DISEÑO RESPONSIVE DE LA PORTADA*/
+
+@media (max-width: 768px) {
+    .portada {
+        grid-template-columns: 1fr;
+        padding: 40px 20px; 
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .acciones-header {
+        flex-direction: column;
+        gap: 15px;
+}
+    nav {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*CATEGORIAS EN CELULARES*/
+.contenedor-categorias {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+
+
+/*PASOS DE COMPRA EN CELULAR*/
+.contenedor-pasos {
+    grid-template-columns: 1fr;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*SECCIÓN MÉTODOS DE PAGO*/
+.metodos-pago {
+    background-color: #FFF9ED;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/*CONTENEDOR DE LOS MÉTODOS DE PAGO*/
+.contenedor-pagos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/*TARJETAS DE MÉTODOS DE PAGO*/
+.tarjeta-pago {
+    background-color: #FFFFFF;
+    padding: 25px 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/*ICONOS DE MÉTODOS DE PAGO*/
+.tarjeta-pago svg {
+    width: 25px;
+    height: 25px;
+    color: #12365B;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+/*NOMBRES DE LOS MÉTODOS DE PAGO*/
+.tarjeta-pago h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #12365B;
+    margin: 0;
+}
+
+/*TÍTULO DE MÉTODOS DE PAGO*/
+.metodos-pago h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #12365B;
+    margin: 0 0 10px;
+}
+
+/*DESCRIPCIÓN DE MÉTODOS DE PAGO*/
+.descripcion-pagos {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #173747;
+    margin: 0;
+}
+
+/*NOTA INFORMATIVA DE MÉTODOS DE PAGO*/
+.nota-pagos {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #173747;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*MÉTODOS DE PAGO EN CELULARES*/
+@media (max-width: 600px) {
+
+    .contenedor-pagos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   PÁGINA DEL CATÁLOGO
+========================================= */
+
+/* PORTADA DEL CATÁLOGO */
+.portada-catalogo {
+    background-color: #FFF9ED;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* TÍTULO DE LA PORTADA DEL CATÁLOGO */
+.portada-catalogo h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #12365B;
+    margin: 0 0 15px;
+}
+
+/* DESCRIPCIÓN DE LA PORTADA DEL CATÁLOGO */
+.portada-catalogo p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #173747;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+
+
+
+/* =========================================
+   SECCIÓN DE PRODUCTOS DEL CATÁLOGO
+========================================= */
+
+/* CONTENEDOR PRINCIPAL DE PRODUCTOS */
+.productos-catalogo {
+    padding: 20px 30px 60px;
+    text-align: center;
+}
+
+/* TÍTULO DE LA SECCIÓN DE PRODUCTOS */
+.productos-catalogo h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #12365B;
+    margin: 0 0 15px;
+}
+
+/* DESCRIPCIÓN DE LA SECCIÓN DE PRODUCTOS */
+.productos-catalogo > p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #173747;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* =========================================
+   CUADRÍCULA DE PRODUCTOS DEL CATÁLOGO
+========================================= */
+
+/* CONTENEDOR DE LAS TARJETAS DE PRODUCTOS */
+.grid-productos-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 300px));
+    gap: 20px;
+    max-width: 1260px;   /*AMPLIAMOS LA CUADRÍCULA PARA DAR MÁS ESPACIO A LAS TAREJTAS*/
+    margin: 30px auto 0;
+}
+
+
+
+/* =========================================
+   TARJETAS DE PRODUCTOS DEL CATÁLOGO
+========================================= */
+
+/* DISEÑO GENERAL DE CADA TARJETA */
+.producto-catalogo {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(18, 54, 91, 0.10);
+    box-sizing: border-box;
+}
+
+/*FOTOGRAFÍAS DE LOS PRODUCTOS DEL CATÁLOGO*/
+.producto-catalogo img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin: 0 auto 15px;
+}
+
+
+/* NOMBRE DE LOS PRODUCTOS DEL CATÁLOGO */
+.producto-catalogo h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #12365B;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+/* DESCRIPCIÓN DE LOS PRODUCTOS DEL CATÁLOGO */
+/* MANTENEMOS LOS MISMOS ESTILOS DEL CARRUSEL */
+.producto-catalogo > p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: #173747;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+/* PRECIO DE LOS PRODUCTOS DEL CATÁLOGO */
+/* MISMA TIPOGRAFÍA Y ESTILO QUE EL CARRUSEL */
+.producto-catalogo .precio-catalogo {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #12365B;
+    margin-top: 8px;
+}
+
+
+
+
+/* =========================================
+   BOTÓN DE WHATSAPP DEL CATÁLOGO
+========================================= */
+
+/* MISMO DISEÑO QUE LOS BOTONES DEL CARRUSEL */
+.boton-pedido-catalogo {
+    display: block;
+    background-color: #FFD54A;
+    color: #12365B;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* CAMBIO DE COLOR AL PASAR EL CURSOR */
+.boton-pedido-catalogo:hover {
+    background-color: #F48E2A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   SELECTOR DE COLORES DEL CATÁLOGO
+========================================= */
+
+/* CONTENEDOR GENERAL DEL SELECTOR */
+.colores-producto {
+    margin-top: 15px;
+}
+/* TEXTO: SELECCIONA UN COLOR */
+.colores-producto > p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #12365B;
+    margin: 0 0 12px;
+    text-align: center;
+}
+/* CONTENEDOR DE LOS CÍRCULOS DE COLORES */
+.opciones-colores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+/* DISEÑO GENERAL DE LOS BOTONES DE COLORES */
+.color-opcion {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0;
+    box-shadow: 0 0 0 1px #D6D6D6;
+
+    /* ANIMACIÓN AL SELECCIONAR UN COLOR */
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* COLORES DISPONIBLES DEL COLLAR LED */
+.color-opcion[data-color="anaranjado"] {
+    background-color: #F47A16;
+}
+.color-opcion[data-color="amarillo"] {
+    background-color: #F5D62F;
+}
+.color-opcion[data-color="verde"] {
+    background-color: #23B45D;
+}
+.color-opcion[data-color="azul"] {
+    background-color: #2777E6;
+}
+.color-opcion[data-color="negro"] {
+    background-color: #242424;
+}
+.color-opcion[data-color="rosa"] {
+    background-color: #F06EAC;
+}
+.color-opcion[data-color="naranja-claro"] {
+    background-color: #FFB568;
+}
+/* INDICADOR VISUAL AL NAVEGAR CON TECLADO */
+.color-opcion:focus-visible {
+    outline: 3px solid #12365B;
+    outline-offset: 3px;
+}
+
+
+
+
+
+/* =========================================
+   COLORES DE LAS BOLSAS PARA DESECHOS
+========================================= */
+
+.color-opcion[data-color="verde-limon"] {
+    background-color: #A4E54B;
+}
+
+.color-opcion[data-color="verde-oscuro"] {
+    background-color: #168B52;
+}
+
+.color-opcion[data-color="verde-menta"] {
+    background-color: #B5E8C0;
+}
+
+.color-opcion[data-color="blanco"] {
+    background-color: #FFFFFF;
+}
+
+.color-opcion[data-color="naranja"] {
+    background-color: #F28C28;
+}
+
+.color-opcion[data-color="morado"] {
+    background-color: #9656C8;
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   COLORES DE LOS TAZONES DE ACERO
+========================================= */
+
+.color-opcion[data-color="amarillo"] {
+    background-color: #FFD54A;
+}
+
+.color-opcion[data-color="azul-cielo"] {
+    background-color: #8BCBEF;
+}
+
+.color-opcion[data-color="rosa-pastel"] {
+    background-color: #F5B7C8;
+}
+
+/* Tono menta específico para los tazones */
+.producto-tazones-acero
+.color-opcion[data-color="verde-menta"] {
+    background-color: #A8DCC5;
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+   COLORES DEL COLLAR CON HUELLITAS
+========================================= */
+
+/* ROSA CLARO */
+.color-opcion[data-color="rosa-claro"] {
+    background-color: #F6B8CE;
+}
+
+/* MORADO CLARO */
+.color-opcion[data-color="morado-claro"] {
+    background-color: #C9A3E8;
+}
+
+/* AZUL VERDOSO */
+.color-opcion[data-color="azul-verdoso"] {
+    background-color: #25B6B1;
+}
+
+/* MORADO NORMAL */
+.color-opcion[data-color="morado"] {
+    background-color: #7B3FA1;
+}
+
+/* AZUL MARINO */
+.color-opcion[data-color="azul-marino"] {
+    background-color: #173A70;
+}
+
+/* VERDE FOSFORESCENTE */
+.color-opcion[data-color="verde-fosforescente"] {
+    background-color: #A4F225;
+}
+
+
+
+
+
+
+/* =========================================
+   COLORES DE LOS DISPENSADORES
+========================================= */
+
+/* AMARILLO ANARANJADO - DISPENSADOR CON RELIEVE */
+.color-opcion[data-color="amarillo-anaranjado"] {
+    background-color: #F5A623;
+}
+
+/* ROJO - DISPENSADOR SENCILLO */
+.color-opcion[data-color="rojo"] {
+    background-color: #E53935;
+}
+
+/* GRIS - DISPENSADOR SENCILLO */
+.color-opcion[data-color="gris"] {
+    background-color: #969696;
+}
+
+/* AZUL CON AMARILLO - DISPENSADOR SENCILLO */
+.color-opcion[data-color="azul-amarillo"] {
+    background: linear-gradient(
+        135deg,
+        #2879DB 50%,
+        #FFD633 50%
+    );
+}
+
+/* NARANJA CLARO CON VERDE CLARO - DISPENSADOR SENCILLO */
+.color-opcion[data-color="naranja-claro-verde-claro"] {
+    background: linear-gradient(
+        135deg,
+        #F6A75B 50%,
+        #A8D86D 50%
+    );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   COLOR SELECCIONADO
+========================================= */
+
+/* RESALTAR EL COLOR ELEGIDO POR EL CLIENTE */
+.color-opcion.seleccionado {
+    box-shadow: 0 0 0 3px #12365B;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   SELECTOR DE TALLAS DEL CATÁLOGO
+========================================= */
+
+/* CONTENEDOR GENERAL DEL SELECTOR DE TALLAS */
+.tallas-producto {
+    margin-top: 15px;
+}
+
+/* TEXTO: SELECCIONA UNA TALLA */
+.tallas-producto > p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #12365B;
+    text-align: center;
+    margin: 0 0 12px;
+}
+
+/* CONTENEDOR DE LOS BOTONES DE TALLAS */
+.opciones-tallas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* DISEÑO GENERAL DE CADA BOTÓN DE TALLA */
+.talla-opcion {
+    min-width: 42px;
+    min-height: 42px;
+    padding: 8px 10px;
+    background-color: #FFF9ED;
+    color: #12365B;
+    border: 1px solid #D6D6D6;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+/* EFECTO AL PASAR EL CURSOR SOBRE UNA TALLA */
+.talla-opcion:hover {
+    background-color: #FFE9B0;
+    border-color: #F48E2A;
+}
+
+/* INDICADOR AL NAVEGAR CON EL TECLADO */
+.talla-opcion:focus-visible {
+    outline: 3px solid #12365B;
+    outline-offset: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   GALERÍA DE MINIATURAS DEL CATÁLOGO
+========================================= */
+
+/* CONTENEDOR DE LAS FOTOGRAFÍAS PEQUEÑAS */
+.miniaturas-producto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+/* BOTÓN QUE CONTIENE CADA MINIATURA */
+.miniatura-opcion {
+    width: 60px;
+    height: 60px;
+    padding: 4px;
+    background-color: #FFFFFF;
+    border: 2px solid #D6D6D6;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* IMAGEN DENTRO DEL BOTÓN DE MINIATURA */
+.miniatura-opcion img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    border-radius: 6px;
+}
+
+/* EFECTO AL PASAR EL CURSOR SOBRE LA MINIATURA */
+.miniatura-opcion:hover {
+    border-color: #F48E2A;
+}
+
+/* INDICADOR AL NAVEGAR CON EL TECLADO */
+.miniatura-opcion:focus-visible {
+    outline: 3px solid #12365B;
+    outline-offset: 3px;
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+   MINIATURA SELECCIONADA
+========================================= */
+
+/* BORDE QUE IDENTIFICA LA FOTOGRAFÍA ACTIVA */
+.miniatura-opcion.miniatura-activa {
+    border-color: #12365B;
+    box-shadow: 0 0 0 1px #12365B;
+}
+
+/* TRANSICIÓN SUAVE ENTRE ESTADOS */
+.miniatura-opcion {
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   TALLA SELECCIONADA DEL CATÁLOGO
+========================================= */
+
+/* RESALTAR LA TALLA ELEGIDA POR EL CLIENTE */
+.talla-opcion.seleccionada {
+    background-color: #12365B;
+    color: #FFFFFF;
+    border-color: #12365B;
+}
+
+/* CONSERVAR EL ESTILO AL PASAR EL CURSOR */
+.talla-opcion.seleccionada:hover {
+    background-color: #173747;
+    border-color: #173747;
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   DISEÑO RESPONSIVE DEL CATÁLOGO
+   PANTALLAS DE HASTA 480 PX
+========================================= */
+
+@media (max-width: 480px) {
+
+    /* APROVECHAMOS EL ANCHO DISPONIBLE EN CELULARES */
+    .grid-productos-catalogo {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+}
+
+
+
+
+/* =========================================
+   COLORES EN CELULARES PEQUEÑOS
+   PANTALLAS DE HASTA 360 PX
+========================================= */
+
+@media (max-width: 360px) {
+
+    /* REDUCIMOS EL ESPACIO ENTRE LOS COLORES */
+    .opciones-colores {
+        gap: 4px;
+    }
+
+    /* REDUCIMOS LIGERAMENTE EL TAMAÑO DE LOS CÍRCULOS */
+    .color-opcion {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   COLORES DEL COLLAR CON HUELLITAS
+========================================= */
+
+/* CUATRO COLORES POR FILA */
+.producto-huellitas .opciones-colores {
+    display: grid;
+    grid-template-columns: repeat(4, 28px);
+    justify-content: center;
+    gap: 12px;
+}
+
+
+
+
+/* =========================================
+   COLORES DE LAS CORREAS AJUSTABLES
+========================================= */
+
+/* AZUL ZAFIRO */
+.producto-correas-ajustables
+.color-opcion[data-color="azul-zafiro"] {
+    background-color: #1746B5;
+}
+
+
+
+
+
+
+
+
+
+
+/* LOGOTIPO DE WHATSAPP EN LOS BOTONES */
+.icono-whatsapp {
+    width: 20px;
+    height: 20px;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* ALINEACIÓN DEL BOTÓN DE LA CABECERA */
+.boton-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+

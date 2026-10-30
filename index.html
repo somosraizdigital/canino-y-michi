@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Canino &amp; Michi</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+
+
+
+
+
+
+        <!--CABECERA DE LA PÁGINA-->
+        <header>
+            
+            <h1>
+                <a href="index.html" class="enlace-logo">
+                <img src="imagenes/logo-canino-y-michi.png"
+                     alt="Logotipo de Canino y Michi"
+                     class="logo-header">
+                     Canino &amp; Michi
+                </a>
+            </h1>
+            
+
+
+
+
+            <!--MENÚ DE NAVEGACIÓN-->
+           <div class="acciones-header">
+            
+            <nav>           <!--ENLACES ENTRE LA PORTADA Y EL CATÁLOGO-->
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="#como-comprar">Cómo comprar</a>
+                <a href="#entregas">Entregas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+
+
+
+            <!-- BOTÓN DE WHATSAPP DE LA CABECERA -->
+            <a
+              href="https://wa.me/525666386400?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20los%20productos%20de%20Canino%20%26%20Michi."
+              class="boton-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer">
+
+
+            <img src="imagenes/whatsapp.svg"
+                 alt=""
+                 class="icono-whatsapp">
+
+              WhatsApp
+            </a>
+
+
+           </div>
+
+
+        </header>
+        
+        
+
+
+
+        <!--CONTENIDO PRINCIPAL-->
+        <main>
+
+            <section class="portada">
+
+            <div class="contenido-portada">
+         
+            <h2>Pequeños amigos, grandes alegrías 🐾</h2>
+            
+            <p>En Canino &amp; Michi encontrarás alimentos y accesorios para consentir
+               a quienes llenan tu vida de alegría.
+            </p>
+
+
+            <!-- Aviso de próxima apertura -->
+            <div class="aviso-apertura">
+            <strong>🐾 ¡Muy pronto llega Canino &amp; Michi!</strong>
+
+            <p>
+              Estamos preparando alimentos y accesorios para tus mascotas.
+              Apertura prevista en aproximadamente 2 semanas.
+            </p>
+            </div>
+
+
+
+
+            <!-- BOTÓN DE WHATSAPP DE LA PORTADA -->
+            <a
+              href="https://wa.me/525666386400?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Canino%20%26%20Michi%20y%20me%20gustar%C3%ADa%20conocer%20sus%20productos."
+              class="boton-portada"
+              target="_blank"
+              rel="noopener noreferrer">
+
+              <img src="imagenes/whatsapp.svg"
+                   alt=""
+                   class="icono-whatsapp">
+              Consultar por WhatsApp
+            </a>
+
+
+
+
+            </div>
+
+            <div class="imagen-portada">
+                <img src="imagenes/mascotas-portada.png"
+                     alt="Un perrito y un gatito juntos">    <!--Ya hice el cambio de la imagen y esta es la que debe de aparecer-->
+
+
+            </div>
+            
+            </section>
+
+
+            <!--SECCIÓN DE CATEGORÍAS-->
+
+            <section class="categorias">
+                <h2>Explora nuestras categorías 🐾</h2>
+
+                <!--TARJETA DE ALIMENTOS-->
+
+                <div class="contenedor-categorias">
+
+                    <div class="tarjeta-categoria"> 
+                    <img src="imagenes/categoria-alimentos.png" alt="Recipiente con croquetas para mascotas">
+                    <h3>Alimentos</h3>
+                </div>
+
+                <!--TARJETA DE ACCESORIOS-->
+                <div class="tarjeta-categoria">
+                    <img src="imagenes/categoria-accesorios.png" alt="Collares, correas, placas de identificación, arnés y tazón para mascota">
+                    <h3>Accesorios</h3>
+                </div>
+
+                <!--TARJETA DE JUGUETES-->
+                <div class="tarjeta-categoria">
+                    <img src="imagenes/categoria-juguetes.png" alt="Juguetes para perros y gatos">
+                    <h3>Juguetes</h3>
+                    <p class="etiqueta-proximamente">Próximamente</p> <!--La quitaremos cuando tenga producto de esa categoría-->
+                </div>
+
+                <!--TARJETEA DE HIGIENE-->
+                <div class="tarjeta-categoria">
+                    <img src="imagenes/categoria-higiene.png" alt="Productos de higiene para perros y gatos">
+                    <h3>Higiene</h3>
+                    <p class="etiqueta-proximamente">Próximamente</p> <!--La quitaremos cuando tenga producto de esa categoría-->
+                </div>
+
+                </div>             
+            </section>
+
+
+
+
+            <!--SECCIÓN CATÁLOGO DE PRODUCTOS-->
+
+            <section class="catalogo" id="catalogo">
+
+                <h2>Descubre algunos de nuestros productos 🐾 </h2>
+                <p> Explora una selección de nuestros accesorios.
+                    Tenemos diferentes modelos, colores y tamaños
+                    para consentir a tus mascotas.
+                </p>
+
+
+
+
+
+
+
+
+
+
+
+                <!--CARRUSEL DE PRODUCTOS DESTACADOS-->        <!--Estoy poniedno una vista precvia de los productos que ofrecemos-->
+                <!--CONTROLES DEL CARRUSEL-->
+                <div class="controles-carrusel">
+                    <button class="flecha-carrusel flecha-anterior"
+                            type="button"
+                            aria-label="Ver productos anteriores">
+                            &#10094;
+                    </button>
+
+                    <button class="flecha-carrusel flecha-siguiente"
+                            type="button"
+                            aria-label="Ver productos siguientes">
+                            &#10095;
+                    </button>
+
+                </div>
+
+                                                           <!--PRODUCTOS DEL CARRUSEL-->
+                <div class="contenedor-productos">
+
+                    <!--PRIMER PRODUCTO-->
+                    <article class="tarjeta-producto">
+                        <img src="imagenes/collares-led.webp" alt="Collares LED para mascotas en diferentes colores">
+                        <h3>Collares LED para mascotas</h3>
+                        <p>Diferentes modelos, colores y tamaños.</p>
+                        <p class="precio-producto">$119.00 MXN</p>
+                        <a href="https://wa.me/525666386400?text=Hola%2C%20me%20interesan%20los%20collares%20LED%20para%20mascotas%20de%20Canino%20%26%20Michi." class="boton-producto" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a>
+                    </article>
+
+
+
+                    <!--SEGUNDO PRODUCTO-->
+                    <article class="tarjeta-producto">
+                        <img src="imagenes/correas-mascotas.png" alt="Correas para mascotas en diferentes colores">
+                        <h3>Correa ajustable tipo lazo para perros</h3>
+                        <p>Disponible en cuatro colores. Medidas: 1 cm de ancho y 1.3 m de largo.</p>
+                        <p class="precio-producto">$149.00 MXN</p>
+                        <a href="https://wa.me/525666386400?text=Hola%2C%20me%20interesan%20las%20correas%20para%20mascotas%20de%20Canino%20%26%20Michi." class="boton-producto" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a>
+                    </article>
+
+
+
+                    <!--TERCER PRODUCTO-->
+                    <article class="tarjeta-producto">
+                        <img src="imagenes/placas-identificacion.webp" alt="Placas de indentifiación para mascotas con y sin grabado">
+                        <h3>Placas de identificación personalizadas</h3>
+                        <p>Placas de acero inoxidable en forma de huesito. Grabado personalizado incluido.</p>
+                        <p class="precio-producto">$90.00 MXN</p>
+                        <a href="https://wa.me/525666386400?text=Hola%2C%20me%20interesan%20las%20placas%20de%20identificacion%20de%20Canino%20%26%20Michi.%20Quisiera%20conocer%20las%20opciones%20con%20y%20sin%20grabado." class="boton-producto" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a>
+                    </article>
+
+
+
+                    <!--CUARTO PRODUCTO-->
+                    <article class="tarjeta-producto">
+                        <img src="imagenes/dispensadores-bolsas.webp" alt="Diferentes modelos de dispensadores de bolsas para mascotas">
+                        <h3>Dispensadores de bolsas</h3>
+                        <p>Diferentes modelos y colores para llevar las bolsas durante tus paseos.</p>
+                        <p class="precio-producto">Desde $49.00 MXN</p>
+                        <a href="https://wa.me/525666386400?text=Hola%2C%20me%20interesan%20los%20dispensadores%20de%20bolsas%20para%20mascotas%20de%20Canino%20%26%20Michi.%20Quisiera%20conocer%20los%20modelos%20disponibles." class="boton-producto" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+            <!--SECCIÓN CÓMO COMPRAR-->
+
+            <section class="como-comprar" id="como-comprar">
+                <h2> 🐶 Comprar es muy fácil 🐱 </h2>
+                
+                <div class="contenedor-pasos">
+                    
+                    <div class="tarjeta-paso">
+                        <h3>1. Explora nuestros productos</h3>
+                        <p>Descubre los alimentos y accesorios que tenemos para tus mascotas.</p>
+                    </div>
+
+                    <div class="tarjeta-paso">
+                        <h3>2. Haz tu pedido</h3>
+                        <p>Escríbenos por WhatsApp y dinos qué productos necesitas.</p>
+                    </div>
+
+                    <div class="tarjeta-paso">
+                        <h3>3. Recibe tu pedido</h3>
+                        <p>Confirmamos la disponibilidad y acordamos contigo la entrega.</p>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+        
+
+
+
+
+
+
+            <!--SECCIÓN MÉTODOS DE PAGO-->
+
+            <section class="metodos-pago">
+
+                <h2>Paga como prefieras 💳 </h2>
+
+                <p class="descripcion-pagos">
+                    Elige el método de pago que más te convenga.
+                </p>
+
+                <div class="contenedor-pagos">
+
+                    <div class="tarjeta-pago">
+                        <i data-lucide="banknote"></i>
+                        <h3>Efectivo</h3>
+                    </div>
+
+                    <div class="tarjeta-pago">
+                        <i data-lucide="landmark"></i>
+                        <h3>Transferencia</h3>
+                    </div>
+
+                    <div class="tarjeta-pago">
+                        <i data-lucide="credit-card"></i>
+                        <h3>Débito</h3>
+                    </div>
+
+                    <div class="tarjeta-pago">
+                        <i data-lucide="wallet-cards"></i>
+                        <h3>Crédito</h3>
+                    </div>
+
+                </div>
+
+                <p class="nota-pagos">
+                    Los pagos con tarjeta se realizan al momento de la entrega
+                    mediante terminal Mercado Pago.
+                    "Lo que ves es lo que pagas"
+                </p>
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--SECCIÓN DE ENTREGAS-->
+
+            <section class="entregas" id="entregas">
+                <h2>Entregas con mucho cariño 🐾</h2>
+                <p>
+                    Queremos que consentir a tus mascotas sea cada vez más fácil.
+                    Escribenos por WhatsApp para conocer nuestras opciones de
+                    entrega y coordinar tu pedido.
+                </p>
+            </section>
+
+
+
+
+
+
+
+            <!--SECCIÓN DE CONTACTO-->
+
+            <section class="contacto" id="contacto">
+
+                <h2>¡Estamos para ayudarte!</h2>
+
+                <p>
+                    ¿Tienes alguna pregunta sobre nuestros productos?
+                    Escríbenos por WhatsApp o síguenos en Instagram
+                    para conocer nuestras novedades.
+                </p>
+
+            <!--BOTONES DE CONTACTO-->
+
+            <div class="botones-contacto">
+
+                
+            
+            <!-- BOTÓN DE WHATSAPP DE LA SECCIÓN CONTACTO -->
+            <a href="https://wa.me/525666386400?text=Hola%2C%20conoc%C3%AD%20Canino%20%26%20Michi%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20pr%C3%B3xima%20apertura."
+               class="boton-contacto-whatsapp"
+               target="_blank"
+               rel="noopener noreferrer">
+
+            <img src="imagenes/whatsapp.svg"
+                 alt=""
+                 class="icono-whatsapp">
+               Escríbenos por WhatsApp
+            </a>
+
+
+
+
+            <!--CONEXIÓN DE INSTAGRAM-->
+
+                <a href="https://www.instagram.com/caninoymichi/"
+                 class="boton-contacto-instagram"
+                 target="_blank"
+                 rel="noopener noreferrer">
+
+                <i data-lucide="instagram"></i>
+                Síguenos en Instagram
+                </a>
+
+
+
+            </div>
+
+
+
+            </section>
+            
+
+
+
+
+
+        </main>
+
+
+
+
+
+        <!--PIE DE PÁGINA-->
+        <footer>
+            <p>© 2026 Canino &amp; Michi</p>
+        </footer>
+
+
+
+
+
+
+        <script src="script.js"></script>
+
+
+        <!--Biblioteca de iconos Lucide-->
+        <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+        <script>
+            lucide.createIcons();
+        </script>
+
+
+
+
+    </body>
+
+
+
+</html>
+
+
+
