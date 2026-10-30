@@ -1621,3 +1621,12 @@ footer p {
 
 
 
+.enlace-categoria {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+
