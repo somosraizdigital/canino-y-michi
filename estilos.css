@@ -259,6 +259,33 @@ footer p {
     text-align: center;
 }
 
+/* DISTRIBUCIÓN DEL FOOTER DEL CATÁLOGO */
+.contenido-footer-catalogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* BOTÓN DE INSTAGRAM DEL CATÁLOGO */
+.footer-catalogo .boton-contacto-instagram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    color: #173747;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+/* FOOTER ADAPTABLE A CELULARES */
+@media (max-width: 600px) {
+    .contenido-footer-catalogo {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
 
 
 
@@ -456,6 +483,9 @@ footer p {
     box-sizing: border-box;
     flex-shrink: 0;
     scroll-snap-align: start;
+/*ORGANIZA EL CONTENIDO VERTICALMENTE*/
+    display: flex;
+    flex-direction: column;
 }
 /*FOTOGRAFÍAS DE LOS PRODUCTOS*/
 .tarjeta-producto img {
@@ -495,6 +525,25 @@ footer p {
     color: #12365B;
     margin-top: 8px;
 }
+
+/* =========================================
+   ESTADO DE PRODUCTOS DESTACADOS
+   ========================================= */
+
+/* ETIQUETA PARA PRODUCTOS QUE YA TENEMOS DISPONIBLES EN EL CARRUCEL */
+.tarjeta-producto .estado-producto {
+    display: table;
+    background-color: #DDF5E3;
+    color: #176534;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 8px auto;
+}
+
+
+
 /*BOTÓN DE WHATSAPP EN LOS PRODUCTOS*/
 .boton-producto {
     display: block;
@@ -506,7 +555,8 @@ footer p {
     text-align: center;
     text-decoration: none;
     padding: 12px 15px;
-    margin-top: 15px;
+    /* EMPUJA EL BOTÓN HACIA LA PARTE INFERIOR DE LA TARJETA */ 
+    margin-top: auto;
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
@@ -729,6 +779,10 @@ footer p {
     box-sizing: border-box;
     position: relative;
 }
+/* TARJETA DESTACADA: CATEGORÍA DISPONIBLE */
+.tarjeta-categoria.categoria-destacada {
+    border: 2px solid #12365B;
+}
 
 
 
@@ -770,6 +824,22 @@ footer p {
     margin: 0;
     background-color: #FFF1D5;
     color: #8A5818;
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+
+/* ETIQUETA DE CATEGORÍA DISPONIBLE */
+.etiqueta-disponible {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0;
+    background-color: #DDF5E3;
+    color: #176534;
     font-family: 'Nunito', sans-serif;
     font-size: 11px;
     font-weight: 700;
@@ -1000,6 +1070,7 @@ footer p {
 .grid-productos-catalogo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 300px));
+    justify-content: center; /*CENTRAR LAS COLUMNAS DEL CATÁLOGO*/
     gap: 20px;
     max-width: 1260px;   /*AMPLIAMOS LA CUADRÍCULA PARA DAR MÁS ESPACIO A LAS TAREJTAS*/
     margin: 30px auto 0;
@@ -1011,14 +1082,20 @@ footer p {
    TARJETAS DE PRODUCTOS DEL CATÁLOGO
 ========================================= */
 
-/* DISEÑO GENERAL DE CADA TARJETA */
+
+/* DISEÑO GENERAL DE CADA TARJETA DEL CATÁLOGO */
 .producto-catalogo {
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 5px 15px rgba(18, 54, 91, 0.10);
     box-sizing: border-box;
+
+    /* Organiza los elementos de arriba hacia abajo */
+    display: flex;
+    flex-direction: column;
 }
+
 
 /*FOTOGRAFÍAS DE LOS PRODUCTOS DEL CATÁLOGO*/
 .producto-catalogo img {
@@ -1039,11 +1116,13 @@ footer p {
     color: #12365B;
     text-align: center;
     margin: 0 0 10px;
+    min-height: 48px; /* Reserva espacio para títulos de hasta dos líneas */
 }
 
 /* DESCRIPCIÓN DE LOS PRODUCTOS DEL CATÁLOGO */
 /* MANTENEMOS LOS MISMOS ESTILOS DEL CARRUSEL */
-.producto-catalogo > p {
+.producto-catalogo > p,
+.producto-catalogo > .contenido-detalles-producto > p {
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
     color: #173747;
@@ -1082,7 +1161,7 @@ footer p {
     text-align: center;
     text-decoration: none;
     padding: 12px 15px;
-    margin-top: 15px;
+    margin-top: auto;
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
@@ -1525,15 +1604,21 @@ footer p {
 
 
 /* =========================================
-   DISEÑO RESPONSIVE DEL CATÁLOGO
-   PANTALLAS DE HASTA 480 PX
+   CATÁLOGO EN CELULARES
+   UNA TARJETA POR FILA
 ========================================= */
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
 
-    /* APROVECHAMOS EL ANCHO DISPONIBLE EN CELULARES */
+    /* Mostramos un producto por fila */
     .grid-productos-catalogo {
         grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    /* Recuperamos el espacio interior de las tarjetas */
+    .producto-catalogo {
+        padding: 20px;
     }
 
 }
@@ -1627,6 +1712,628 @@ footer p {
     color: inherit;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   ICONO DE PRODUCTO DISPONIBLE
+========================================= */
+
+.icono-disponible {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #198754;
+    color: white;
+
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-right: 6px;
+}
+
+
+
+
+
+/* =========================================
+   ICONO DE PRODUCTO PRÓXIMAMENTE
+========================================= */
+.icono-proximamente {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #F59E0B;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   MINIATURAS DE LAS CAMAS ACOLCHADAS
+========================================= */
+
+.miniaturas-camas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   ESTILO DE LAS MINIATURAS DE LAS CAMAS
+========================================= */
+
+.miniaturas-camas img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+
+
+
+/* =========================================
+   MINIATURA DE LA CAMA SELECCIONADA
+========================================= */
+
+.producto-cama-acolchada .miniatura-cama.seleccionada {
+    border: 3px solid #173747;
+}
+
+/* EFECTO AL PASAR EL CURSOR */
+.producto-cama-acolchada .miniatura-cama {
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.producto-cama-acolchada .miniatura-cama:hover {
+    border-color: #F28C28;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   INFORMACIÓN DE LAS CAMAS ACOLCHADAS
+========================================= */
+
+.producto-cama-acolchada .informacion-cama {
+    margin: 15px 0;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* COLOR, TALLA Y MEDIDAS */
+.producto-cama-acolchada .informacion-cama p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ETIQUETAS DE LOS DATOS */
+.producto-cama-acolchada .informacion-cama strong {
+    color: #173747;
+}
+
+/* PRECIO DE LA VARIANTE SELECCIONADA */
+.producto-cama-acolchada .informacion-cama .precio-cama {
+    margin-top: 12px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #173747;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* =========================================
+   PRODUCTO 16: CHAMARRITA DE BÉISBOL
+   DISEÑO DE LA GUÍA DE MEDIDAS
+========================================= */
+
+/* CONTENEDOR GENERAL DE LA GUÍA */
+.producto-chamarrita-beisbol .medidas-chamarrita {
+
+    /* Separación respecto a los botones de tallas */
+    margin-top: 18px;
+
+    /* Espacio interior */
+    padding: 14px;
+
+    /* Fondo suave de la marca */
+    background-color: #FFF9ED;
+
+    /* Esquinas redondeadas */
+    border-radius: 12px;
+
+    /* Tipografía consistente con el catálogo */
+    font-family: 'Nunito', sans-serif;
+
+    /* Color principal del texto */
+    color: #173747;
+}
+
+/* PÁRRAFOS DE LA GUÍA */
+.producto-chamarrita-beisbol .medidas-chamarrita p {
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+}
+
+/* TÍTULO DE LA GUÍA */
+.producto-chamarrita-beisbol .medidas-chamarrita > p:first-child {
+
+    font-family: 'Fredoka', sans-serif;
+    font-size: 17px;
+    color: #12365B;
+    margin-bottom: 10px;
+}
+
+/* INFORMACIÓN DE LA TALLA SELECCIONADA */
+.producto-chamarrita-beisbol .informacion-medidas-chamarrita {
+
+    font-weight: 700;
+    margin-bottom: 10px !important;
+}
+
+/* RECOMENDACIÓN FINAL */
+.producto-chamarrita-beisbol .nota-medidas-chamarrita {
+
+    font-size: 12px;
+    font-weight: 400;
+    color: #526575;
+}
+
+
+/* =========================================
+   TAMAÑO DE LETRA DE LAS MEDIDAS
+========================================= */
+
+.producto-chamarrita-beisbol .detalle-medidas-chamarrita {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.producto-chamarrita-beisbol .titulo-talla-chamarrita {
+    font-size: 13px;
+}
+
+
+
+/* =========================================
+   PRODUCTO 16: CHAMARRITA DE BÉISBOL
+   DISTRIBUCIÓN DE LAS MEDIDAS EN DOS COLUMNAS
+========================================= */
+
+/* ORGANIZAMOS CADA FILA */
+.producto-chamarrita-beisbol .fila-medida-chamarrita {
+
+    /* Colocamos el concepto y el valor en una misma fila */
+    display: flex;
+
+    /* Separamos el concepto del valor */
+    justify-content: space-between;
+
+    /* Centramos verticalmente ambos textos */
+    align-items: center;
+
+    /* Espacio entre las dos columnas */
+    gap: 10px;
+
+    /* Separación entre filas */
+    padding: 6px 0;
+
+    /* Línea divisoria suave */
+    border-bottom: 1px solid #E8E2D8;
+
+}
+
+/* QUITAMOS LA LÍNEA DE LA ÚLTIMA FILA */
+.producto-chamarrita-beisbol .fila-medida-chamarrita:last-child {
+    border-bottom: none;
+}
+
+/* CONCEPTOS DE LAS MEDIDAS */
+.producto-chamarrita-beisbol .fila-medida-chamarrita span {
+    text-align: left;
+    font-weight: 400;
+}
+
+/* VALORES DE LAS MEDIDAS */
+.producto-chamarrita-beisbol .fila-medida-chamarrita strong {
+    text-align: right;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   PRODUCTO 17: TAZÓN DE ACERO INOXIDABLE
+   DISTRIBUCIÓN DE LAS MINIATURAS
+========================================= */
+
+.producto-tazon-acero .miniaturas-producto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.producto-tazon-acero .miniatura-opcion {
+    width: 52px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+
+
+
+
+/* =========================================
+   PRODUCTO 18: DISPENSADOR DE BOLSAS DISEÑO POPÓ
+   COLORES DISPONIBLES
+========================================= */
+
+/* COLOR CAFÉ DEL DISPENSADOR */
+.producto-dispensador-popo .color-opcion[data-color="cafe"] {
+    background-color: #8B4513;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   VISOR DE FOTOGRAFÍAS REALES
+   PRODUCTO 14: CAMAS ACOLCHADAS
+========================================= */
+
+/* Ventana que muestra las fotografías */
+.visor-fotos-reales-cama {
+    width: 90%;
+    max-width: 850px;
+    max-height: 90vh;
+    margin: auto;
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+}
+
+/* Fondo oscuro detrás del visor */
+.visor-fotos-reales-cama::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+/* Título del visor */
+.visor-fotos-reales-cama h3 {
+    margin: 0 35px 25px 0;
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-size: 24px;
+    color: #142b49;
+}
+
+/* Contenedor de las dos fotografías */
+.galeria-fotos-reales-cama {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* Fotografías reales */
+.galeria-fotos-reales-cama img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Botón para cerrar el visor */
+.cerrar-visor-cama {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    border: none;
+    background: transparent;
+    color: #142b49;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* =========================================
+   ADAPTACIÓN A PANTALLAS PEQUEÑAS
+========================================= */
+
+@media (max-width: 600px) {
+
+    .visor-fotos-reales-cama {
+        padding: 20px;
+    }
+
+    /* Mostrar las dos fotografías una al lado de la otra */
+.galeria-fotos-reales-cama {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+    .visor-fotos-reales-cama h3 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   BOTÓN DE FOTOGRAFÍAS REALES
+   PRODUCTO 14: CAMAS ACOLCHADAS
+========================================= */
+
+.boton-foto-real-cama {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: fit-content;
+    margin:12px auto 4px;
+    padding: 7px 12px;
+
+    background-color: #ffffff;
+    color: #163a56;
+    border: 1px solid #163a56;
+    border-radius: 8px;
+
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+.boton-foto-real-cama:hover {
+    background-color: #163a56;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Accesibilidad al navegar con teclado */
+.boton-foto-real-cama:focus-visible {
+    outline: 3px solid #f28c28;
+    outline-offset: 3px;
+}
+
+/* Mantener oculto el botón cuando no haya fotos reales */
+.boton-foto-real-cama[hidden] {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   PRODUCTO 15: CAMA TIPO NIDO KIMPET
+   VISOR DE FOTOGRAFÍAS REALES
+========================================= */
+
+/* Ventana principal del visor */
+.visor-fotos-reales-nido {
+    width: 95%;
+    max-width: 900px;
+    max-height: 90vh;
+    padding: 25px;
+    border: none;
+    border-radius: 16px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Organiza las dos fotografías en columnas iguales */
+.galeria-fotos-nido {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* FOTOGRAFÍAS REALES DE LA CAMA TIPO NIDO */
+.galeria-fotos-nido img {
+    display: block;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+
+    /* Redondeamos las cuatro esquinas */
+    border-radius: 16px;
+
+    /* Mantenemos el contenido dentro de los bordes */
+    overflow: hidden;
+}
+
+/* Botón para cerrar el visor */
+.cerrar-visor-nido {
+    display: block;
+    margin-left: auto;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Oscurece el catálogo mientras el visor está abierto */
+.visor-fotos-reales-nido::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+
+    .visor-fotos-reales-nido {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .galeria-fotos-nido {
+        gap: 10px;
+    }
+
+    .galeria-fotos-nido img {
+        height: 280px;
+        object-fit: contain;
+    }
+}
+
+
+
+
+/* Título centrado del visor de la cama KIMPET */
+.titulo-visor-nido {
+    margin: 0;
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #142B49;
+}
+
+
+
+
+
 
 
 

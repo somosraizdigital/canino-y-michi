@@ -1,20 +1,21 @@
-console.log("JavaScript de Canino & Michi funcionando");
+
 
 const carrusel = document.querySelector(".contenedor-productos");
 
-console.log(carrusel);
 
 const flechaAnterior = document.querySelector(".flecha-anterior");
 const flechaSiguiente = document.querySelector(".flecha-siguiente");
 
-console.log(flechaAnterior);
-console.log(flechaSiguiente);
+
 
 //DURACIÓN DE LA ANIMACIÓN
 
 const duracionAnimacion = 600;
 
-console.log("Duración de animación:", duracionAnimacion);
+
+// DETECTAR SI EL USUARIO PREFIERE REDUCIR LAS ANIMACIONES
+const movimientoReducido = window.matchMedia("(prefers-reduced-motion: reduce)");
+
 
 
 
@@ -30,13 +31,11 @@ const tarjetaProducto = carrusel.querySelector(".tarjeta-producto");
 
 let anchoTarjeta = tarjetaProducto.getBoundingClientRect().width;
 
-console.log("Ancho real de la tarjeta:", anchoTarjeta);
 
 
 
 let separacionTarjetas = parseFloat(getComputedStyle(carrusel).gap);
 
-console.log("Separación entre tarjetas:", separacionTarjetas);
 
 
 
@@ -58,6 +57,16 @@ function actualizarFlechas() {
 
 function animarCarrusel(tiempoActual) {
 
+        // RESPETAR LA PREFERENCIA DE MOVIMIENTO REDUCIDO
+    if (movimientoReducido.matches) {
+        carrusel.scrollLeft = posicionInicial +
+            (anchoTarjeta + separacionTarjetas) * direccion;
+
+        animacionActiva = false;
+        actualizarFlechas();
+        return;
+    }
+
     if (tiempoInicio === null) {
         tiempoInicio = tiempoActual;
     }
@@ -71,12 +80,9 @@ function animarCarrusel(tiempoActual) {
     const distancia = (anchoTarjeta + separacionTarjetas) * progresoSuave * direccion;
     carrusel.scrollLeft = posicionInicial + distancia;
 
-    console.log("Distancia recorrida:", distancia);
     
-    console.log("Progreso:", progreso);
 
 
-    console.log("Tiempo transcurrido:", tiempoTranscurrido);
 
     if (tiempoTranscurrido < duracionAnimacion) {
         requestAnimationFrame(animarCarrusel);

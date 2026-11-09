@@ -4,9 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Canino &amp; Michi</title>
+        <!-- DESCRIPCIÓN DE LA PÁGINA PARA BUSCADORES -->
+        <meta name="description" content="Descubre accesorios para perros y gatos en Canino &amp; Michi. Encuentra collares, correas y más productos para consentir a tus mascotas.">
         <link rel="stylesheet" href="estilos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -81,19 +83,12 @@
          
             <h2>Pequeños amigos, grandes alegrías 🐾</h2>
             
-            <p>En Canino &amp; Michi encontrarás alimentos y accesorios para consentir
+            <p>En Canino &amp; Michi encontrarás accesorios para consentir
                a quienes llenan tu vida de alegría.
             </p>
 
 
-            <!-- Aviso de próxima apertura -->
-            <div class="aviso-apertura">
-            <strong>🐾 ¡Muy pronto llega Canino &amp; Michi!</strong>
-
-            <p>
-              Apertura prevista para noviembre de 2026, sujeta a la llegada de nuestros productos.
-            </p>
-            </div>
+        
 
 
 
@@ -137,17 +132,21 @@
 
                 <div class="contenedor-categorias">
 
+                    <!--TARJETA DE ACCESORIOS-->
+                   <a href="catalogo.html" class="tarjeta-categoria enlace-categoria categoria-destacada">
+                      <img src="imagenes/categoria-accesorios.png" alt="Collares, correas, placas de identificación, arnés y tazón para mascota">
+                      <h3>Accesorios</h3>
+                      <span class="etiqueta-disponible">Disponible</span>
+                   </a>
+
+                   <!--TARJETA DE ALIMENTO-->
                     <div class="tarjeta-categoria"> 
                     <img src="imagenes/categoria-alimentos.png" alt="Recipiente con croquetas para mascotas">
                     <h3>Alimentos</h3>
                     <p class="etiqueta-proximamente">Próximamente</p> <!--La quitaremos cuando tenga producto de esa categoría-->
                 </div>
 
-                <!--TARJETA DE ACCESORIOS-->
-                   <a href="catalogo.html" class="tarjeta-categoria enlace-categoria">
-                      <img src="imagenes/categoria-accesorios.png" alt="Collares, correas, placas de identificación, arnés y tazón para mascota">
-                      <h3>Accesorios</h3>
-                   </a>
+                
 
                 <!--TARJETA DE JUGUETES-->
                 <div class="tarjeta-categoria">
@@ -189,7 +188,7 @@
 
 
 
-                <!--CARRUSEL DE PRODUCTOS DESTACADOS-->        <!--Estoy poniedno una vista precvia de los productos que ofrecemos-->
+                <!--CARRUSEL DE PRODUCTOS DESTACADOS-->        <!--Estoy poniedno una vista previa de los productos que ofrecemos-->
                 <!--CONTROLES DEL CARRUSEL-->
                 <div class="controles-carrusel">
                     <button class="flecha-carrusel flecha-anterior"
@@ -214,42 +213,58 @@
                         <img src="imagenes/collares-led.webp" alt="Collares LED para mascotas en diferentes colores">
                         <h3>Collares LED para mascotas</h3>
                         <p>Diferentes colores y tamaños.</p>
-                        <p class="precio-producto">$119.00 MXN</p>
+                        <p class="precio-producto">$120.00 MXN</p>
+
+                        <!-- ESTADO DE DISPONIBILIDAD DEL PRODUCTO -->
+                        <p class="estado-producto">Disponible</p>
+
                         <a href="https://wa.me/525666386400?text=Hola%2C%20me%20interesan%20los%20collares%20LED%20para%20mascotas%20de%20Canino%20%26%20Michi." class="boton-producto" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
                     </article>
 
 
-
                     <!--SEGUNDO PRODUCTO-->
                     <article class="tarjeta-producto">
-                        <img src="imagenes/correas-mascotas.png" alt="Correas para mascotas en diferentes colores">
-                        <h3>Correa ajustable tipo lazo para perros</h3>
-                        <p>Disponible en cuatro colores. Medidas: 1 cm de ancho y 1.3 m de largo.</p>
-                        <p class="precio-producto">$149.00 MXN</p>
-                        <a href="https://wa.me/525666386400?text=Hola%2C%20me%20interesan%20las%20correas%20para%20mascotas%20de%20Canino%20%26%20Michi." class="boton-producto" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+                        <img src="imagenes/dispensadores-bolsas.webp" alt="Diferentes modelos de dispensadores de bolsas para mascotas">
+                        <h3>Dispensadores de bolsas</h3>
+                        <p>Diferentes modelos y colores para llevar las bolsas durante tus paseos.</p>
+                        <p class="precio-producto">Desde $40.00 MXN</p>
+                        
+                        <!-- ESTADO DE DISPONIBILIDAD DEL PRODUCTO -->
+                        <p class="estado-producto">Disponible</p>
+
+                        <a href="https://wa.me/525666386400?text=Hola%2C%20me%20interesan%20los%20dispensadores%20de%20bolsas%20para%20mascotas%20de%20Canino%20%26%20Michi.%20Quisiera%20conocer%20los%20modelos%20disponibles." class="boton-producto" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
                     </article>
 
 
 
                     <!--TERCER PRODUCTO-->
                     <article class="tarjeta-producto">
-                        <img src="imagenes/placas-identificacion.webp" alt="Placas de indentifiación para mascotas con y sin grabado">
-                        <h3>Placas de identificación personalizadas</h3>
-                        <p>Placas de acero inoxidable en forma de huesito. Grabado personalizado incluido.</p>
-                        <p class="precio-producto">$90.00 MXN</p>
-                        <a href="https://wa.me/525666386400?text=Hola%2C%20me%20interesan%20las%20placas%20de%20identificacion%20de%20Canino%20%26%20Michi.%20Quisiera%20conocer%20las%20opciones%20con%20y%20sin%20grabado." class="boton-producto" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+                        <img src="imagenes/correas-mascotas.png" alt="Correas para mascotas en diferentes colores">
+                        <h3>Correa ajustable tipo lazo para perros</h3>
+                        <p>Disponible en cuatro colores. Medidas: 1 cm de ancho y 1.3 m de largo.</p>
+                        <p class="precio-producto">$110.00 MXN</p>
+
+                        <!-- ESTADO DE DISPONIBILIDAD DEL PRODUCTO -->
+                        <p class="estado-producto">Disponible</p>
+
+                        <a href="https://wa.me/525666386400?text=Hola%2C%20me%20interesan%20las%20correas%20para%20mascotas%20de%20Canino%20%26%20Michi." class="boton-producto" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
                     </article>
 
 
 
                     <!--CUARTO PRODUCTO-->
                     <article class="tarjeta-producto">
-                        <img src="imagenes/dispensadores-bolsas.webp" alt="Diferentes modelos de dispensadores de bolsas para mascotas">
-                        <h3>Dispensadores de bolsas</h3>
-                        <p>Diferentes modelos y colores para llevar las bolsas durante tus paseos.</p>
-                        <p class="precio-producto">Desde $49.00 MXN</p>
-                        <a href="https://wa.me/525666386400?text=Hola%2C%20me%20interesan%20los%20dispensadores%20de%20bolsas%20para%20mascotas%20de%20Canino%20%26%20Michi.%20Quisiera%20conocer%20los%20modelos%20disponibles." class="boton-producto" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+                        <img src="imagenes/placas-identificacion.webp" alt="Placas de identificación para mascotas con y sin grabado">
+                        <h3>Placas de Identificación</h3>
+                        <p>Placas de acero inoxidable en forma de huesito.</p>
+                        <p class="precio-producto">$40.00 MXN</p>
+
+                        <!-- ESTADO DE DISPONIBILIDAD DEL PRODUCTO -->
+                        <p class="estado-producto">Disponible</p>
+
+                        <a href="https://wa.me/525666386400?text=Hola%2C%20me%20interesan%20las%20placas%20de%20identificacion%20de%20Canino%20%26%20Michi.%20Quisiera%20conocer%20las%20opciones%20con%20y%20sin%20grabado." class="boton-producto" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
                     </article>
+                    
 
                 </div>
 
@@ -274,7 +289,7 @@
                     
                     <div class="tarjeta-paso">
                         <h3>1. Explora nuestros productos</h3>
-                        <p>Descubre los alimentos y accesorios que tenemos para tus mascotas.</p>
+                        <p>Descubre los accesorios que tenemos para tus mascotas.</p>
                     </div>
 
                     <div class="tarjeta-paso">
@@ -335,9 +350,8 @@
                 </div>
 
                 <p class="nota-pagos">
-                    Los pagos con tarjeta se realizan al momento de la entrega
-                    mediante terminal Mercado Pago.
-                    "Lo que ves es lo que pagas"
+                    Paga al recibir tu pedido. Aceptamos efectivo, transferencia bancaria y tarjetas 
+                    de débito o crédito mediante terminal Mercado Pago.
                 </p>
 
             </section>
@@ -360,7 +374,7 @@
                 <h2>Entregas con mucho cariño 🐾</h2>
                 <p>
                     Queremos que consentir a tus mascotas sea cada vez más fácil.
-                    Escribenos por WhatsApp para conocer nuestras opciones de
+                    Escríbenos por WhatsApp para conocer nuestras opciones de
                     entrega y coordinar tu pedido.
                 </p>
             </section>
@@ -390,7 +404,8 @@
                 
             
             <!-- BOTÓN DE WHATSAPP DE LA SECCIÓN CONTACTO -->
-            <a href="https://wa.me/525666386400?text=Hola%2C%20conoc%C3%AD%20Canino%20%26%20Michi%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20pr%C3%B3xima%20apertura."
+            <a href="https://wa.me/525666386400?text=Hola%2C%20conoc%C3%AD%20Canino%20%26%20Michi%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20productos."
+
                class="boton-contacto-whatsapp"
                target="_blank"
                rel="noopener noreferrer">
@@ -448,7 +463,7 @@
 
 
         <!--Biblioteca de iconos Lucide-->
-        <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+        <script src="vendor/lucide.min.js"></script>
         <script>
             lucide.createIcons();
         </script>
@@ -461,6 +476,4 @@
 
 
 </html>
-
-
 
