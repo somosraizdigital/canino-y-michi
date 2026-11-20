@@ -1179,6 +1179,37 @@ footer p {
 
 
 
+/* =========================================
+   BOTÓN DE PRODUCTO AGOTADO
+========================================= */
+
+.boton-producto-agotado {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #E5E7EB;
+    color: #6B7280;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 12px 15px;
+    margin-top: auto;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: not-allowed;
+}
+
+
+
+
+
+
 
 
 
@@ -1755,6 +1786,30 @@ footer p {
     margin-right: 6px;
 }
 
+
+
+
+/* =========================================
+   ICONO DE PRODUCTO AGOTADO
+========================================= */
+
+.icono-agotado {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #DC2626;
+    color: white;
+
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-right: 6px;
+}
 
 
 
